@@ -1,12 +1,14 @@
 const multer = require("multer");
 const path = require("path");
+/* This code is setting up a middleware for handling file uploads using the `multer` package in
+Node.js. */
 let storage = multer.diskStorage({
   destination: path.join(__dirname, "../../../temp"),
   filename: (req, file, cb) => {
     cb(null, Date.now() + file.originalname);
   },
 });
- const  upload = multer({
+const upload = multer({
   storage: storage,
   fileFilter: (req, file, cb) => {
     if (
@@ -22,4 +24,4 @@ let storage = multer.diskStorage({
   },
 });
 
-module.exports = upload
+module.exports = upload;

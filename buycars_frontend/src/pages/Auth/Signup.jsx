@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -12,8 +12,8 @@ import { MainContext } from "../../Context/MinContext";
 import { useContext } from "react";
 
 export default function SignUp() {
-  const navigate = useNavigate()
-  const { signup,setisAuth } = useContext(MainContext);
+
+  const { signup } = useContext(MainContext);
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -22,7 +22,7 @@ export default function SignUp() {
       name: `${data.get("firstName")} ${data.get("lastName")} `,
       email: data.get("email"),
       password: data.get("password"),
-    })
+    });
   };
 
   return (

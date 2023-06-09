@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 const dburl = process.env.MONODBURL;
+/* This code is establishing a connection to a MongoDB database using the Mongoose library. It is
+creating a constant `dbConnection`  */
 const dbConnection = mongoose
   .connect(dburl)
   .then(() => console.log("successfully connected to Database"))

@@ -11,13 +11,12 @@ import React, { useContext, useState } from "react";
 import PersonIcon from "@mui/icons-material/Person";
 import { theme } from "../../Utils/Theme";
 import { MainContext } from "../../Context/MinContext";
-import { getToken, removeToken } from "../../Utils/storeToken";
+import { removeToken } from "../../Utils/storeToken";
 import { useNavigate } from "react-router-dom";
-import GarageIcon from '@mui/icons-material/Garage';
+import GarageIcon from "@mui/icons-material/Garage";
 function Navbar() {
   const { isAuth, setisAuth } = useContext(MainContext);
   const navigate = useNavigate();
-  const secureToken = getToken("token");
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -36,8 +35,8 @@ function Navbar() {
     setAnchorElUser(null);
   };
   const logout = () => {
-    removeToken("token")
-    removeToken("user")
+    removeToken("token");
+    removeToken("user");
     handleCloseUserMenu();
     setisAuth(false);
     navigate("/signin");
@@ -56,7 +55,10 @@ function Navbar() {
         boxSizing: "border-box",
       }}
     >
-      <div className="brandName" onClick={ ()=>navigate("/")}> <GarageIcon/> Buycars.com</div>
+      <div className="brandName" onClick={() => navigate("/")}>
+        {" "}
+        <GarageIcon /> Buycars.com
+      </div>
       <div>
         {" "}
         {/* <PersonIcon /> */}

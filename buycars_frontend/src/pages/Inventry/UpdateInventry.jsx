@@ -8,10 +8,9 @@ import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import { theme } from "../../Utils/Theme";
 import { ThemeProvider } from "@mui/material/styles";
-import { MuiFileInput } from "mui-file-input";
-import { getToken } from "../../Utils/storeToken";
+
 function UpdateInventry() {
-  const { postInventry, getOemmSpecs,editInventry, oemSpecList, savedforCurd } =
+  const { editInventry, oemSpecList, savedforCurd } =
     useContext(MainContext);
 
   const [payload, setpayload] = useState({

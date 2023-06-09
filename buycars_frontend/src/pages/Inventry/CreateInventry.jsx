@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { MainContext } from "../../Context/MinContext";
-import { Container, Grid, Stack, TextField, Typography } from "@mui/material";
+import { Container, Grid, TextField, Typography } from "@mui/material";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -8,7 +8,6 @@ import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import { theme } from "../../Utils/Theme";
 import { ThemeProvider } from "@mui/material/styles";
-import { MuiFileInput } from "mui-file-input";
 import { getToken } from "../../Utils/storeToken";
 function CreateInventry() {
   const { postInventry, getOemmSpecs, oemSpecList } = useContext(MainContext);
@@ -39,8 +38,6 @@ function CreateInventry() {
     }
     if (name == "image") {
       const file = event.target.files[0];
-
-      console.log("handlfileChange  file:", file);
 
       setpayload({ ...payload, image: file });
     } else {

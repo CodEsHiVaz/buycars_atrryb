@@ -1,15 +1,11 @@
-import React, { useContext, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
-import { MainContext } from '../../Context/MinContext';
+import React, { useContext } from "react";
+
+import { MainContext } from "../../Context/MinContext";
 
 function ViewInventries() {
-  const { getInventry, inventry,setSavedforCurd,savedforCurd,deleteInventry } = useContext(MainContext);
-  const navigate = useNavigate();
+  const { savedforCurd } = useContext(MainContext);
 
-
-  return (
-    <div>{savedforCurd.modelName}</div>
-  )
+  return <div>{savedforCurd.modelName}</div>;
 }
 
-export default ViewInventries
+export default ViewInventries;

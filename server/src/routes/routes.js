@@ -20,14 +20,15 @@ const {
 const upload = require("../middlewares/imageupload/multer");
 
 const router = Router();
+// Auth routes
 router.post("/auth/login", login);
 router.post("/auth/signup", signup);
-
+// OEM Specs related Routes
 router.post("/oem/create", isAuth, postOemSpec);
 router.get("/oem/", isAuth, getOemSpecs);
 router.get("/oem/getoemCount", isAuth, geetOemCount);
 router.get("/oem/:id", isAuth, getSingleOemSpecs);
-
+// inventry related routes
 router.post(
   "/inventry/create",
   isAuth,

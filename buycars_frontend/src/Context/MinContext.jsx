@@ -1,8 +1,7 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { AuthApi, MainApi, NonFormApi } from "../Utils/Api/instance";
 import { useNavigate } from "react-router-dom";
-import { getToken, storeToken } from "../Utils/storeToken";
-import axios from "axios";
+import { storeToken } from "../Utils/storeToken";
 export const MainContext = createContext();
 export const MainContextProvider = ({ children }) => {
   const [isAuth, setisAuth] = useState(false);
@@ -14,8 +13,6 @@ export const MainContextProvider = ({ children }) => {
   const signin = async (payload) => {
     AuthApi.post("/auth/login", payload)
       .then((response) => {
-        // console.log(".then  response:", response.data.user);
-
         storeToken(
           "user",
           JSON.stringify({
@@ -53,7 +50,6 @@ export const MainContextProvider = ({ children }) => {
   const postInventry = (payload) => {
     MainApi.post(`/inventry/create`, payload)
       .then((res) => {
-        console.log(".then  res:", res);
         navigate("/inventry");
       })
       .catch((err) => {
@@ -72,7 +68,6 @@ export const MainContextProvider = ({ children }) => {
   const editInventry = (id, payload) => {
     MainApi.patch(`/inventry/update/${id}`, payload)
       .then((res) => {
-        console.log(".then  res:", res);
         // navigate("/inventry");
         // setInventry(res.data.data);
       })
@@ -87,8 +82,6 @@ export const MainContextProvider = ({ children }) => {
           (item) => !ids.ids.some((id) => id === item._id)
         );
         setInventry(filteredArray);
-
-        console.log(".then  res:", res);
       })
       .catch((err) => {
         console.log("MainApi.delete  err:", err);
@@ -96,9 +89,7 @@ export const MainContextProvider = ({ children }) => {
   };
   const getSingleInventry = (id) => {
     NonFormApi.get(`/inventry/${id}`)
-      .then((res) => {
-        console.log(".then  res:", res);
-      })
+      .then((res) => {})
       .catch((err) => {
         console.log("MainApi.get  err:", err);
       });
@@ -106,15 +97,12 @@ export const MainContextProvider = ({ children }) => {
   const getOemmSpecs = () => {
     NonFormApi.get(`/oem`)
       .then((res) => {
-        console.log("getOemmSpecs  res:", res.data.data);
         setOemSpecsList(res.data.data);
       })
       .catch((err) => {
         console.log("getOemmSpecs  err:", err);
       });
   };
-
-
 
   return (
     <MainContext.Provider

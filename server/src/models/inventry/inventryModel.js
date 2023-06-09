@@ -20,6 +20,7 @@ const inventorySchema = new mongoose.Schema({
   userId: { type: String, required: true },
 });
 
+
 const InventoryModel = mongoose.model("marketplaceInventory", inventorySchema);
 
 module.exports = InventoryModel;

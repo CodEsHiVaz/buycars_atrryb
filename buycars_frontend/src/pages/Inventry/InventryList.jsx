@@ -101,11 +101,9 @@ export default function EnhancedTable() {
   }, []);
   return (
     <Box sx={{ width: "90%", margin: "auto" }}>
-
       <Typography m={2} variant="h4" fontWeight={"bold"}>
-  Inventry List
-
-    </Typography>
+        Inventry List
+      </Typography>
       <Paper sx={{ width: "100%", mb: 2 }}>
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">
