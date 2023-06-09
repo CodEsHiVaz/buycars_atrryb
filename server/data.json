@@ -1,0 +1,186 @@
+[
+    {
+        "modelName": "Ford Falcon",
+        "modelYear": 2003,
+        "newPrice": 1176561,
+        "availableColors": [
+            "Red",
+            "White",
+            "Black"
+        ],
+        "mileage": 14,
+        "power": 157,
+        "maxSpeed": 270
+    },
+    {
+        "modelName": "Volkswagen Gol",
+        "modelYear": 2011,
+        "newPrice": 3396116,
+        "availableColors": [
+            "Red",
+            "White",
+            "Black"
+        ],
+        "mileage": 19,
+        "power": 167,
+        "maxSpeed": 172
+    },
+    {
+        "modelName": "Toyota Hilux",
+        "modelYear": 2015,
+        "newPrice": 4928480,
+        "availableColors": [
+            "Red",
+            "White",
+            "Black",
+            "Magenta"
+        ],
+        "mileage": 20,
+        "power": 127,
+        "maxSpeed": 216
+    },
+    {
+        "modelName": "Škoda Octavia",
+        "modelYear": 2011,
+        "newPrice": 2825804,
+        "availableColors": [
+            "Red"
+        ],
+        "mileage": 22,
+        "power": 176,
+        "maxSpeed": 180
+    },
+    {
+        "modelName": "Renault Clio",
+        "modelYear": 2007,
+        "newPrice": 3863293,
+        "availableColors": [
+            "Red"
+        ],
+        "mileage": 17,
+        "power": 127,
+        "maxSpeed": 220
+    },
+    {
+        "modelName": "Volkswagen Golf",
+        "modelYear": 2021,
+        "newPrice": 1778684,
+        "availableColors": [
+            "Red",
+            "White",
+            "Black",
+            "Magenta"
+        ],
+        "mileage": 22,
+        "power": 161,
+        "maxSpeed": 319
+    },
+    {
+        "modelName": "Maruti Suzuki Alto",
+        "modelYear": 2016,
+        "newPrice": 1297961,
+        "availableColors": [
+            "Red",
+            "White"
+        ],
+        "mileage": 22,
+        "power": 168,
+        "maxSpeed": 294
+    },
+    {
+        "modelName": "Ford Mustang",
+        "modelYear": 2013,
+        "newPrice": 1905008,
+        "availableColors": [
+            "Red"
+        ],
+        "mileage": 21,
+        "power": 128,
+        "maxSpeed": 219
+    },
+    {
+        "modelName": "Ford F-Series",
+        "modelYear": 2009,
+        "newPrice": 814244,
+        "availableColors": [
+            "Red",
+            "White"
+        ],
+        "mileage": 15,
+        "power": 83,
+        "maxSpeed": 166
+    },
+    {
+        "modelName": "Toyota Prius",
+        "modelYear": 2010,
+        "newPrice": 2330716,
+        "availableColors": [
+            "Red",
+            "White"
+        ],
+        "mileage": 17,
+        "power": 94,
+        "maxSpeed": 187
+    },
+    {
+        "modelName": "Mazda MX-5",
+        "modelYear": 2011,
+        "newPrice": 4471488,
+        "availableColors": [
+            "Red"
+        ],
+        "mileage": 21,
+        "power": 98,
+        "maxSpeed": 236
+    },
+    {
+        "modelName": "Toyota Corolla",
+        "modelYear": 2011,
+        "newPrice": 3660196,
+        "availableColors": [
+            "Red",
+            "White",
+            "Black",
+            "Magenta"
+        ],
+        "mileage": 14,
+        "power": 122,
+        "maxSpeed": 176
+    },
+    {
+        "modelName": "SEAT Ibiza",
+        "modelYear": 2009,
+        "newPrice": 1759501,
+        "availableColors": [
+            "Red",
+            "White"
+        ],
+        "mileage": 23,
+        "power": 149,
+        "maxSpeed": 183
+    },
+    {
+        "modelName": "Pearl",
+        "modelYear": 2009,
+        "newPrice": 1677050,
+        "availableColors": [
+            "Red"
+        ],
+        "mileage": 24,
+        "power": 139,
+        "maxSpeed": 184
+    },
+    {
+        "modelName": "Tesla Model 3",
+        "modelYear": 2001,
+        "newPrice": 4492295,
+        "availableColors": [
+            "Red",
+            "White",
+            "Black"
+        ],
+        "mileage": 20,
+        "power": 129,
+        "maxSpeed": 277
+    }
+]
